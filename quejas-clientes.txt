@@ -1,0 +1,8 @@
+﻿Producto;Motivo;Cliente Usuario;
+veri;cvbcbcv;useram;
+veri;sfsdfs;useram;
+veri;sdasda;adi;
+barcelo;Estaba rancio;useram;
+Aquarius;Estaba vencido;useram;
+fanta;no me gusto;useram;
+fanta;no me gusto sabe feo;adobras;
