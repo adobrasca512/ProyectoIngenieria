@@ -1,5 +1,8 @@
 package ProyectoIngenieria;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class Quejas_Clientes {
 	private Administradortabla tablaconfigurador;
 	private String matriz[][];
@@ -9,7 +12,10 @@ public class Quejas_Clientes {
 	public Quejas_Clientes(Administradortabla tablaconfigurador) {
 		super();
 		this.tablaconfigurador = tablaconfigurador;
-		this.matriz = tablaconfigurador.getlectura_csv(ruta);
+		Path rutarelativa1=Paths.get(ruta);
+        Path rutabsoluta1=rutarelativa1.toAbsolutePath();
+       String rutafinal1=String.valueOf(rutabsoluta1);
+		this.matriz = tablaconfigurador.getlectura_csv(rutafinal1);
 	}
 
 	public void getLeerquejas() {
